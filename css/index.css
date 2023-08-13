@@ -1,0 +1,20 @@
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome p {
+    font-family : NTR;
+    font-size : 28px;
+    line-height : 30px;
+    color : #3D3D3D;
+    color : rgb(61, 61, 61);
+}
+.welcome h1 {
+    display: flex;
+    font-family : Gloock;
+    font-size : 55px;
+    color : #B32E2A;
+    color : rgb(179, 46, 42);
+}
