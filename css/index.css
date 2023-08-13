@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     line-height: 30px;
+    margin-top: 110px;
 }
 
 .welcome {
