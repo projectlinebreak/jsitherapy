@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    line-height: 30px;
 }
 
 .welcome {
@@ -21,22 +22,18 @@
 
 .para1 {
     padding: 1rem;
-    line-height: 30px;
 }
 
 .para2 {
     padding: 1rem;
-    line-height: 30px;
 }
 
 .para3 {
     padding: 1rem;
-    line-height: 30px;
 }
 
 .para4 {
     padding: 1rem;
-    line-height: 30px;
 }
 
 .opening {
