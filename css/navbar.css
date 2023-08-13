@@ -20,7 +20,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #f5f5f5;
     border-bottom: 1px solid #ddd;
 }
@@ -54,3 +57,51 @@ header {
     text-decoration: underline;
     /* Add underlining on hover for better user feedback */
 }
+
+
+/* CSS items pertaining to the footer section of the website. */
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.contact h3 {
+    font-family : Gloock;
+    font-size : 35px;
+    color : #02B3E6;
+    color : rgb(2, 179, 230);
+    padding-bottom: 10px;
+}
+
+.contact p {
+    font-family : NTR;
+  font-size : 25px;
+  line-height : 30px;
+  color : #3D3D3D;
+  color : rgb(61, 61, 61);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+footer {
+    background : #EFEFEF;
+    background : rgba(239, 239, 239, 1);
+}
+
+.copyright {
+    display: flex;
+    font-family : NTR;
+    font-size : 20px;
+    color : #848484;
+    color : rgb(132, 132, 132);
+    justify-content: center;
+  }
