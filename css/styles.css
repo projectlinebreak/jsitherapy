@@ -39,15 +39,18 @@ header {
     /* Increased margin for more spacing */
 }
 
+.navbar a {
+    font-family: 'NTR', sans-serif;
+    /* Use the NTR font */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 /* Add hover effect to navigation links */
 .navbar a:hover {
     color: #02B3E6;
     text-decoration: underline;
     /* Add underlining on hover for better user feedback */
-}
-
-
-/* Add hover effect to navigation links */
-.navbar a:hover {
-    color: #02B3E6;
 }
