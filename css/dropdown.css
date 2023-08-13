@@ -36,6 +36,10 @@ section {
     box-shadow: .5rem 1px .5rem rgba(0, 0, 0, .1);
 }
 
+.accordion-link:hover {
+    color: #ade66c;
+}
+
 .accordion-link {
     font-size: 20px;
     color: #7DBA39;
@@ -45,6 +49,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
+    transition-duration: 0.2s;
 }
 
 .accordion-link i {
