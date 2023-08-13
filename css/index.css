@@ -1,28 +1,49 @@
-
 .welcome {
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
 
-.body-text  {
+.body-text {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.welcome p {
-    font-family : NTR;
-    font-size : 28px;
-    text-align:left;
-    line-height : 30px;
-    color : #3D3D3D;
-    color : rgb(61, 61, 61);
+.welcome {
+    font-family: NTR;
+    font-size: 28px;
+    text-align: left;
+
+    color: #3D3D3D;
+    color: rgb(61, 61, 61);
 }
-.welcome h1 {
-    text-align:right;
-    font-family : Gloock;
-    font-size : 55px;
-    color : #B32E2A;
-    color : rgb(179, 46, 42);
+
+.para1 {
+    padding: 1rem;
+    line-height: 30px;
+}
+
+.para2 {
+    padding: 1rem;
+    line-height: 30px;
+}
+
+.para3 {
+    padding: 1rem;
+    line-height: 30px;
+}
+
+.para4 {
+    padding: 1rem;
+    line-height: 30px;
+}
+
+.opening {
+    text-align: right;
+    font-family: Gloock;
+    font-size: 55px;
+    padding: 2rem;
+    color: #B32E2A;
+    color: rgb(179, 46, 42);
 }
