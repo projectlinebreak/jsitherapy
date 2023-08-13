@@ -104,3 +104,7 @@ footer {
     color : rgb(132, 132, 132);
     justify-content: center;
   }
+
+  .contact img {
+    margin-right: 5rem;
+  }
