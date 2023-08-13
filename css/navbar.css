@@ -1,0 +1,56 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 40px;
+    /* Increased margin for more spacing */
+}
+
+.navbar a {
+    font-family: 'NTR', sans-serif;
+    /* Use the NTR font */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Add hover effect to navigation links */
+.navbar a:hover {
+    color: #02B3E6;
+    text-decoration: underline;
+    /* Add underlining on hover for better user feedback */
+}
