@@ -40,6 +40,7 @@ section {
     border-radius: -4rem;
     margin-bottom: 1rem;
     padding: 1rem;
+    position: relative;
     box-shadow: .5rem 1px .5rem rgba(0, 0, 0, .1);
 }
 
@@ -61,10 +62,6 @@ section {
 
 .accordion-link i {
     padding: .5rem;
-}
-
-.accordion-link .remove {
-    display: none;
 }
 
 .answer {
@@ -94,6 +91,7 @@ section {
 
 .answer.active {
     max-height: 20rem;
+    z-index: 1;
 }
 
 .hidden {
