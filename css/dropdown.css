@@ -65,6 +65,7 @@ section {
     overflow: hidden;
     position: relative;
     background-color: rgba(204, 204, 204, 0.3);
+    transition: max-height 650ms;
 }
 
 .answer::before {
@@ -85,4 +86,12 @@ section {
 
 .accordion-item:target .answer {
     max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .add {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .remove {
+    display: block;
 }
