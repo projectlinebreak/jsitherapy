@@ -59,4 +59,10 @@ img {
         white-space: normal; /* Reset white-space */
         font-weight: 600;
     }
+
+    img {
+        max-width: 100%; /* Ensure all <img> elements maintain aspect ratio */
+        height: auto;
+        margin: 0 auto; /* Center images */
+    }
 }
