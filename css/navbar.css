@@ -20,15 +20,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: #f5f5f5;
 }
 
 .logo img {
-    height: 100px;
+    height: 6rem;
+    max-width: 100%;
+
 }
 
 .navbar ul {
@@ -37,7 +39,7 @@ header {
 }
 
 .navbar li {
-    margin-right: 40px;
+    margin-right: 2.5rem;
     /* Increased margin for more spacing */
 }
 
@@ -47,7 +49,7 @@ header {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 
 /* Add hover effect to navigation links */
@@ -63,24 +65,24 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 20px;
+    padding-top: 3.7rem;
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+    padding-bottom: 3.7rem;
 }
 
 .contact h3 {
     font-family : Gloock;
-    font-size : 35px;
+    font-size : 2.1rem;
     color : #02B3E6;
     color : rgb(2, 179, 230);
-    padding-bottom: 10px;
+    padding-bottom: 0.6rem;
 }
 
 .contact p {
-    font-family : NTR;
-  font-size : 25px;
-  line-height : 30px;
+font-family : NTR;
+  font-size : 1.5rem;
+  line-height : 1.8rem;
   color : #3D3D3D;
   color : rgb(61, 61, 61);
 }
@@ -99,7 +101,7 @@ footer {
 .copyright {
     display: flex;
     font-family : NTR;
-    font-size : 20px;
+    font-size : 1.2rem;
     color : #848484;
     color : rgb(132, 132, 132);
     justify-content: center;

@@ -1,7 +1,7 @@
 .opening {
     text-align: right;
     font-family: Gloock;
-    font-size: 55px;
+    font-size: 3.4rem;
     padding: 2rem;
     color: #B32E2A;
     color: rgb(179, 46, 42);
@@ -15,7 +15,7 @@
     justify-content: space-between;
     padding: 10rem;
     font-family: NTR;
-    font-size: 28px;
+    font-size: 1.7rem;
     text-align: left;
     color: #3D3D3D;
     color: rgb(61, 61, 61);
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    line-height: 30px;
+    line-height: 1.8rem;
     margin-top: 2rem;
 }
 
@@ -35,7 +35,7 @@
 
 .icon-text {
     font-family: Gloock;
-    font-size: 55px;
+    font-size: 3.4rem;
     color: #B32E2A;
     color: rgb(179, 46, 42);
     font-weight: 600;
@@ -50,7 +50,7 @@
 .s-logo {
     text-align: center;
     flex: 1;
-    padding: 20px;
+    padding: 1.2px;
 }
 
 .icons1 {
@@ -62,16 +62,16 @@
 }
 
 .house-img {
-    width: 131px;
+    width: 8.1rem;
     height: auto;
 }
 
 .hospital-img {
-    width: 157px;
+    width: 9.8rem;
     height: auto;
 }
 
 .contract-img {
-    width: 127px;
+    width: 7.9rem;
     height: auto;
 }
