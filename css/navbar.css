@@ -124,11 +124,12 @@ footer {
     }
 
     .navbar ul {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
     }
 
     .navbar li {
+        padding: 0.5rem 1.2rem;
         margin-right: 0; /* Remove margin between stacked items */
         margin-bottom: 1rem; /* Add spacing between stacked items */
     }
@@ -144,13 +145,16 @@ footer {
     }
 
     .contact img {
-        margin-right: 0; /* Remove margin */
+        margin: 0 auto; /* Center the image horizontally */
         margin-bottom: 1.5rem; /* Add spacing below image */
+        display: block; /* Ensures that margin auto works properly */
+    
     }
 
     .container {
         align-items: center; /* Center items horizontally */
         text-align: center; /* Center text */
+        padding: 1rem;
     }
 
     .contact h3 {

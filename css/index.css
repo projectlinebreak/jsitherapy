@@ -44,6 +44,7 @@ img {
         margin: 2rem; /* Adjust margin for smaller screens */
         font-size: 1.5rem; /* Slightly smaller font size */
         text-align: center; /* Center text for mobile */
+        flex-direction: column;
     }
 
     .body-text {
