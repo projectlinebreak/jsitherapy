@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
     padding: 15rem;
+    font-family: NTR;
+    font-size: 28px;
+    text-align: left;
+    color: #3D3D3D;
+    color: rgb(61, 61, 61);
 }
 
 .body-text {
@@ -12,27 +17,7 @@
     margin-top: 36rem;
 }
 
-.welcome {
-    font-family: NTR;
-    font-size: 28px;
-    text-align: left;
-    color: #3D3D3D;
-    color: rgb(61, 61, 61);
-}
-
-.para1 {
-    padding: 1rem;
-}
-
-.para2 {
-    padding: 1rem;
-}
-
-.para3 {
-    padding: 1rem;
-}
-
-.para4 {
+.para {
     padding: 1rem;
 }
 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=NTR:wght@400;700&display=swap">
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <title>JSI Therapy Services</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- TODO: Figure out how to size up image without it looking squished. Code as in illustrator:  height="130" width="330" -->
+      <img src="images/jsi_big.png"alt="Logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Body -->
+<section class="service">
+
+    <div class="opening">Our Services</div>
+<div class="body-text">
+  <p class="para">At our core, we have a deep concern for your company and the
+    well-being of your patients. Our commitment extends beyond
+    just providing services; it's about building a genuine partnership.</p>
+
+  <p class="para"> We specialize in Physical Therapy (PT), Occupational Therapy (OT),
+    and Speech Therapy (ST), ensuring a holistic approach to wellness.
+    Our services span across different settings:</p>
+</div>
+  
+</section>
+
+<section>
+    <div class="icons">
+        <div class="s-logo">
+            <img src="images/hospital_icon.png"width="512" height="512"alt="Clinic Icon"class="hospital-img">
+            <h2 class="icon-text">
+                Outpatient Clinic
+            </h2>
+        </div>
+        <div class="s-logo">
+            <img src="images/home_icon.png"width="512" height="512"alt="House Icon"class="house-img">
+            <h2 class="icon-text">
+                At-Home Therapy
+            </h2>
+        </div>
+    </div>
+
+    <div class="s-logo">
+        <img src="images/contract_icon.png"width="512" height="512"alt="House Icon"class="house-img">
+        <h2 class="icon-text">
+            Contract Therapy
+        </h2>
+        <h2 class="icon-text">
+            Management Services
+        </h2>
+    </div>
+</section>
+    
+
+<section class="section-drop">
+    <!-- TODO: Figure out why it goes over the thing-->
+    <div class="container">
+      <div class="faq">
+        <h1>FAQ</h1>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item" id="question1">
+          <a class = "accordion-link" href="#question1">
+            What insurance do you take?
+            <ion-icon class = "toggle-icon add" name="add-outline"></ion-icon>
+          </a>
+          <div class="answer">
+            <p>
+              We take pride in our commitment to accommodating a diverse array of insurance providers. Our dedication to comprehensive care extends to accepting a broad spectrum of insurance options, allowing us to cater to the varying needs of our valued patients.
+            </p>
+          </div>
+        </div>
+          <div class="accordion-item" id="question2">
+            <a class = "accordion-link" href="#question2">
+              What are your qualifications?
+              <ion-icon class = "toggle-icon add" name="add-outline"></ion-icon>
+            </a>
+            <div class="answer">
+              <p>
+                Our Licensed and Insured Therapists strictly adhere to the rigorous guidelines set forth by HIPAA, MEDICARE, and MEDICAID. We meticulously align ourselves with all state regulations and licensure requirements, ensuring a steadfast commitment to compliance and ethical practices.
+                Furthermore, we embody a spirit of dedication and reliability, operating seamlessly as professional team players. This unwavering commitment is at the heart of our pursuit of excellence, as we consistently strive to deliver the utmost standard of skilled and restorative interventions in the realms of physical, occupational, and speech therapy.  
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Your content goes here -->
+  <footer>
+      <div class="contact">
+        <img src="images/jsi_logo.png" width="160" height="160" alt="Logo">
+        <div class="container">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 9:00am - 4:00pm</p>
+          <p>Saturday & Sunday: By Appointment</p>
+        </div>
+        <div class="container">
+          <h3>Office</h3>
+          <p>129 Alondra Way</p>
+          <p>Round Rock, TX. 78681</p>
+        </div>
+        <div class="container">
+          <h3>Outpatient Clinic</h3>
+          <p>4818 Berkman Drive</p>
+          <p>Austin, TX. 78723</p>
+          <p>Suite 1105</p>
+        </div>
+      </div>
+      <p class="copyright">&copy Jumpstart Services Inc. 2023</p>
+  </footer>
+</body>
+ <!-- Ion icons -->
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <!-- Js Scripts -->
+ <script src="scripts/accordion.js"></script>
+</html>

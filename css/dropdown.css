@@ -20,7 +20,7 @@ html {
 }
 
 /* section used for centering process */
-section {
+.section-drop {
     width: 100%;
     height: 100vh;
     display: flex;
