@@ -39,7 +39,7 @@ img {
 
 
 /* Media query for screens with a maximum width of 600px (typical mobile screen width) */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .welcome {
         margin: 2rem; /* Adjust margin for smaller screens */
         font-size: 1.5rem; /* Slightly smaller font size */
