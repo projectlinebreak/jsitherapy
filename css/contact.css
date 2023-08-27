@@ -1,0 +1,48 @@
+.head {
+    text-align: center;
+    font-family: Gloock;
+    font-size: 60px;
+    color: #B32E2A;
+    color: rgb(179, 46, 42);
+    white-space: pre;
+    font-weight: 600;
+}
+
+.box {
+    width: 100%;
+    height: 75vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-family: NTR;
+}
+
+form button {
+    padding: 15px;
+    background: #7DBA39;
+    color: white;
+    font-size: 18px;
+    font-family: NTR;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
