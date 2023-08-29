@@ -46,3 +46,37 @@ form button {
     outline: none;
     cursor: pointer;
 }
+
+.title {
+    font-family: Gloock;
+    font-size: 50px;
+    color: #B32E2A;
+    color: rgb(179, 46, 42);
+    justify-content: center;
+    font-weight: 600;
+}
+
+.details {
+    font-family: NTR;
+    font-size: 25px;
+    color: #3D3D3D;
+    color: rgb(61, 61, 61);
+    justify-content: center;
+}
+
+section {
+    padding: 5rem;
+}
+
+.maps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map {
+    text-align: center;
+    flex: 1;
+    padding: 1.2px;
+
+}
