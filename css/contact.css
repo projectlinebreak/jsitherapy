@@ -80,3 +80,13 @@ section {
     padding: 1.2px;
 
 }
+
+.required-label {
+    color: rgb(88, 88, 88);
+    margin-left: 5px;
+}
+
+.label-container {
+    display: inline-block;
+    /* Display label and "(required)" text inline */
+}
