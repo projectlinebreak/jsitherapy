@@ -1,10 +1,20 @@
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .head {
     text-align: center;
     font-family: Gloock;
     font-size: 3.7rem;
-    color: #B32E2A;
     color: rgb(179, 46, 42);
-    white-space: pre;
+    margin-top: 4rem;
     font-weight: 600;
 }
 
@@ -13,7 +23,6 @@
     font-family: Gloock;
     font-size: 3.4rem;
     padding: 2rem;
-    color: #B32E2A;
     color: rgb(179, 46, 42);
     white-space: pre;
     font-weight: 600;
@@ -24,21 +33,33 @@
     font-family: Gloock;
     font-size: 3.4rem;
     padding: 2rem;
-    color: #B32E2A;
     color: rgb(179, 46, 42);
     white-space: pre;
     font-weight: 600;
 }
 
-.about {
+.animate {
+    animation: fadeUp 0.7s ease-in-out both;
+}
+
+.about-l {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     font-family: NTR;
     font-size: 1.7rem;
     margin: 0 5rem;
-    color: #3D3D3D;
     color: rgb(61, 61, 61);
+}
+.about-r {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: NTR;
+    font-size: 1.7rem;
+    margin: 0 5rem;
+    color: rgb(61, 61, 61);
+    flex-direction: row-reverse;
 }
 
 .body-text {
@@ -60,4 +81,50 @@
 
 .para {
     padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+
+    .head {
+        font-size: 3.2rem;
+        color: #B32E2A;
+    }
+
+    .about-l {
+        margin: 2rem; /* Adjust margin for smaller screens */
+        font-size: 1.5rem; /* Slightly smaller font size */
+        text-align: center; /* Center text for mobile */
+        flex-direction: column;
+    }
+    .about-r{
+        margin: 2rem; /* Adjust margin for smaller screens */
+        font-size: 1.5rem; /* Slightly smaller font size */
+        text-align: center; /* Center text for mobile */
+        flex-direction: column;
+    }
+    .l-header {
+        text-align: center; /* Center text for mobile */
+        font-size: 2.5rem; /* Smaller font size */
+        padding: 1.5rem; /* Reduce padding */
+        color: #B32E2A;
+        white-space: normal; /* Reset white-space */
+        font-weight: 600;
+    }
+    .r-header {
+        text-align: center; /* Center text for mobile */
+        font-size: 2.5rem; /* Smaller font size */
+        padding: 1.5rem; /* Reduce padding */
+        color: #B32E2A;
+        white-space: normal; /* Reset white-space */
+        font-weight: 600;
+    }
+
+    .body-text {
+        text-align: center;
+    }
+
+    .r-body-text {
+        text-align: center;
+    }
+
 }
