@@ -102,6 +102,10 @@
         font-size: 1.8rem;
         padding-bottom: 3rem;
     }
+
+    .answer.active {
+        max-height: 25rem;
+
+    }
+
 }
-
-
