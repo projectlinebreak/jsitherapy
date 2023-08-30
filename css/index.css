@@ -3,6 +3,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -55,46 +56,65 @@ img {
 /* Media query for screens with a maximum width of 600px (typical mobile screen width) */
 @media (max-width: 900px) {
     .welcome {
-        margin: 2rem; /* Adjust margin for smaller screens */
-        font-size: 1.5rem; /* Slightly smaller font size */
-        text-align: center; /* Center text for mobile */
+        margin: 2rem;
+        /* Adjust margin for smaller screens */
+        font-size: 1.5rem;
+        /* Slightly smaller font size */
+        text-align: center;
+        /* Center text for mobile */
         flex-direction: column;
     }
 
     .body-text {
-        line-height: 1.6rem; /* Slightly smaller line-height */
-        margin-top: 1.5rem; /* Adjust margin */
+        line-height: 1.6rem;
+        /* Slightly smaller line-height */
+        margin-top: 1.5rem;
+        /* Adjust margin */
     }
 
     .opening {
-        text-align: center; /* Center text for mobile */
-        font-size: 2.5rem; /* Smaller font size */
-        padding: 1.5rem; /* Reduce padding */
+        text-align: center;
+        /* Center text for mobile */
+        font-size: 2.5rem;
+        /* Smaller font size */
+        padding: 1.5rem;
+        /* Reduce padding */
         color: #B32E2A;
-        white-space: normal; /* Reset white-space */
+        white-space: normal;
+        /* Reset white-space */
         font-weight: 600;
     }
 
     img {
-        max-width: 100%; /* Ensure all <img> elements maintain aspect ratio */
+        max-width: 100%;
+        /* Ensure all <img> elements maintain aspect ratio */
         height: auto;
-        margin: 0 auto; /* Center images */
+        margin: 0 auto;
+        /* Center images */
     }
 }
 
 @media (max-width: 1200px) {
     .welcome {
-        margin: 2rem; /* Adjust margin for smaller screens */
-        font-size: 1.5rem; /* Slightly smaller font size */
-        text-align: center; /* Center text for mobile */
+        margin: 2rem;
+        /* Adjust margin for smaller screens */
+        font-size: 1.5rem;
+        /* Slightly smaller font size */
+        text-align: center;
+        /* Center text for mobile */
         flex-direction: column;
     }
+
     .opening {
-        text-align: center; /* Center text for mobile */
-        font-size: 2.5rem; /* Smaller font size */
-        padding: 1.5rem; /* Reduce padding */
+        text-align: center;
+        /* Center text for mobile */
+        font-size: 2.5rem;
+        /* Smaller font size */
+        padding: 1.5rem;
+        /* Reduce padding */
         color: #B32E2A;
-        white-space: normal; /* Reset white-space */
+        white-space: normal;
+        /* Reset white-space */
         font-weight: 600;
     }
 
