@@ -45,12 +45,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10rem;
 }
 
 .s-logo {
     text-align: center;
     flex: 1;
     padding: 1.2px;
+}
+
+.s-logo h2 {
+    font-size: 2.5rem;
 }
 
 .icons1 {
@@ -74,4 +79,38 @@
 .contract-img {
     width: 7.9rem;
     height: auto;
+}
+
+@media (max-width: 1200px) {
+    .service {
+        margin: 2rem; /* Adjust margin for smaller screens */
+        font-size: 1.5rem; /* Slightly smaller font size */
+        text-align: center; /* Center text for mobile */
+        flex-direction: column;
+        padding: 1.5rem; /* Reduce padding */
+        
+    }
+
+    .opening {
+        font-size: 3.2rem;
+        color: #B32E2A;
+        text-align: center;
+    }
+
+    .icons {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0rem;
+        
+    }
+
+    .s-logo {
+        padding: 3rem;
+    }
+
+    .s-logo h2 {
+        font-size: 2rem;
+    }
+
+
 }

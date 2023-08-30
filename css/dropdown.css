@@ -6,16 +6,11 @@
     box-sizing: inherit;
 }
 
-html {
-    font-family: 'NTR', sans-serif;
-    font-size: 0.3rem;
-    box-sizing: border-box;
-}
 
 .faq {
     font-family: Gloock;
-    font-size: 1.5rem;
-    padding: 1.5rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
     color: #B32E2A;
 }
 
@@ -97,3 +92,16 @@ html {
 .hidden {
     display: none;
 }
+
+@media (max-width: 1200px) {
+    .container {
+       margin: 2rem;
+    }
+
+    .faq {
+        font-size: 1.8rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
