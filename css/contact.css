@@ -1,11 +1,10 @@
 .head {
     text-align: center;
     font-family: Gloock;
-    font-size: 60px;
+    font-size: 3.7rem;
     color: #B32E2A;
-    color: rgb(179, 46, 42);
-    white-space: pre;
     font-weight: 600;
+    margin-bottom: 5rem;
 }
 
 .box {
@@ -15,41 +14,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 form {
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
+    max-width: 37.5rem;
+    border-radius: 0.6rem;
 }
 
 form input,
 form textarea {
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
+    border: solid 0.1rem;
+    border-color: #666666;
+    margin: 0.6rem 0;
+    padding: 0.5rem;
     outline: none;
     background-color: #f5f5f5;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-family: NTR;
 }
 
-form button {
-    padding: 15px;
-    background: #7DBA39;
-    color: white;
-    font-size: 18px;
+button {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    padding: 0.05rem 1rem;
+    background-color: transparent;
+    border: solid 0.15rem #7DBA39;
+    color: #7DBA39; /* Change the initial text color */
+    font-size: 1.5rem;
     font-family: NTR;
-    border: 0;
     outline: none;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+button:hover {
+    background-color: #7DBA39;
+    color: white; /* Text color on hover */
+  }
 
 .title {
     font-family: Gloock;
-    font-size: 50px;
+    font-size: 3.1rem;
     color: #B32E2A;
     color: rgb(179, 46, 42);
     justify-content: center;
@@ -58,7 +68,7 @@ form button {
 
 .details {
     font-family: NTR;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #3D3D3D;
     color: rgb(61, 61, 61);
     justify-content: center;
@@ -77,16 +87,51 @@ section {
 .map {
     text-align: center;
     flex: 1;
-    padding: 1.2px;
+    padding: 0.075rem;
+
+}
+.number {
+    text-align: center;
+    flex: 1;
+    padding: 0.075rem;
 
 }
 
 .required-label {
     color: rgb(88, 88, 88);
-    margin-left: 5px;
+    margin-left: 0.3rem;
 }
+
 
 .label-container {
     display: inline-block;
     /* Display label and "(required)" text inline */
+}
+
+.label-container label {
+font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .head {
+        font-size: 3rem;
+    }
+    
+    .maps {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .number{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem; /* Smaller font size */
+    }
+
+    button {
+        margin-bottom: 10rem;
+    }
 }
