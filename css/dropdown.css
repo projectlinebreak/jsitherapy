@@ -46,7 +46,7 @@
 }
 
 .accordion-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0, .6);
     text-decoration: none;
     width: 100%;
@@ -63,6 +63,7 @@
 
 .answer {
     max-height: 0;
+    font-size: 1.5rem;
     overflow: hidden;
     position: relative;
     background-color: rgba(204, 204, 204, 0.3);
@@ -113,6 +114,10 @@
     .section-drop {
         padding-top: 10rem;
         padding-bottom: 10rem;
+    }
+
+    .answer {
+        font-size: 1.25rem;
     }
 
 }

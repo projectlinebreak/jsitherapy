@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const accordionLinks = document.querySelectorAll('.accordion-link');
     const accordionAnswers = document.querySelectorAll('.answer');
 
+
     accordionLinks.forEach((link, index) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
