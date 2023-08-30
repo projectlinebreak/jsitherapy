@@ -3,6 +3,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -51,6 +52,7 @@
     margin: 0 5rem;
     color: rgb(61, 61, 61);
 }
+
 .about-r {
     display: flex;
     justify-content: space-between;
@@ -76,7 +78,7 @@
     justify-content: space-evenly;
     line-height: 1.8rem;
     text-align: right;
-    margin-top: 0.5rem;
+
 }
 
 .para {
@@ -92,31 +94,48 @@
     }
 
     .about-l {
-        margin: 2rem; /* Adjust margin for smaller screens */
-        font-size: 1.5rem; /* Slightly smaller font size */
-        text-align: center; /* Center text for mobile */
+        margin: 2rem;
+        /* Adjust margin for smaller screens */
+        font-size: 1.5rem;
+        /* Slightly smaller font size */
+        text-align: center;
+        /* Center text for mobile */
         flex-direction: column;
     }
-    .about-r{
-        margin: 2rem; /* Adjust margin for smaller screens */
-        font-size: 1.5rem; /* Slightly smaller font size */
-        text-align: center; /* Center text for mobile */
+
+    .about-r {
+        margin: 2rem;
+        /* Adjust margin for smaller screens */
+        font-size: 1.5rem;
+        /* Slightly smaller font size */
+        text-align: center;
+        /* Center text for mobile */
         flex-direction: column;
     }
+
     .l-header {
-        text-align: center; /* Center text for mobile */
-        font-size: 2.5rem; /* Smaller font size */
-        padding: 1.5rem; /* Reduce padding */
+        text-align: center;
+        /* Center text for mobile */
+        font-size: 2.5rem;
+        /* Smaller font size */
+        padding: 1.5rem;
+        /* Reduce padding */
         color: #B32E2A;
-        white-space: normal; /* Reset white-space */
+        white-space: normal;
+        /* Reset white-space */
         font-weight: 600;
     }
+
     .r-header {
-        text-align: center; /* Center text for mobile */
-        font-size: 2.5rem; /* Smaller font size */
-        padding: 1.5rem; /* Reduce padding */
+        text-align: center;
+        /* Center text for mobile */
+        font-size: 2.5rem;
+        /* Smaller font size */
+        padding: 1.5rem;
+        /* Reduce padding */
         color: #B32E2A;
-        white-space: normal; /* Reset white-space */
+        white-space: normal;
+        /* Reset white-space */
         font-weight: 600;
     }
 
