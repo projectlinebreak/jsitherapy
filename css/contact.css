@@ -116,6 +116,11 @@ section {
     font-size: 1.5rem;
 }
 
+
+img {
+    max-width: 100%;
+}
+
 @media (max-width: 1200px) {
     .head {
         font-size: 3rem;
