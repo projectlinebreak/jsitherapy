@@ -7,7 +7,7 @@ function autoScroll() {
     setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         container.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-    }, 3000); // Change image every 3 seconds (adjust as needed)
+    }, 5000); // Change image every 5 seconds (adjust as needed)
 }
 
 window.onload = autoScroll;
