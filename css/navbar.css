@@ -111,6 +111,53 @@ footer {
     margin-right: 5rem;
 }
 
+<<<<<<< HEAD
+=======
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu {
+    display: block;
+    /* Change to block so it takes up space */
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    visibility: hidden;
+    /* Hide the dropdown menu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: opacity ease-in-out;
+    /* Add a transition effect for opacity */
+}
+
+.dropdown-menu li {
+    padding: 0.625rem 0.938rem;
+    border-bottom: 0.063rem solid #eee;
+}
+
+.dropdown-menu a {
+    font-size: 1.7rem;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+
+>>>>>>> d6fe0da2f9077c420585d13b09c4aecc34a1511c
 /* Media query for screens with a maximum width of 600px (typical mobile screen width) */
 @media (max-width: 900px) {
     header {
