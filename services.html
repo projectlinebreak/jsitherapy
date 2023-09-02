@@ -19,12 +19,18 @@
     </div>
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+              <a href="services.html">Our Services</a>
+              <ul class="dropdown-menu">
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="services.html#FAQ">FAQ</a></li>
+              </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </nav>
+  </nav>
   </header>
 
 <!-- Body -->
@@ -76,7 +82,7 @@
     </div>
 </section>
 
-<section class="section-drop">
+<section class="section-drop" id="FAQ">
     <div class="container">
       <div class="faq animate-on-scroll">
         <h1>FAQ</h1>
