@@ -1,3 +1,14 @@
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .welcome {
     display: flex;
@@ -33,9 +44,30 @@
     font-weight: 600;
 }
 
+.animate {
+    animation: fadeUp 0.7s ease-in-out both;
+}
+
 img {
     max-width: 100%;
 }
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 /* Media query for screens with a maximum width of 600px (typical mobile screen width) */
@@ -77,6 +109,10 @@ img {
         margin: 0 auto;
         /* Center images */
     }
+
+
+
+
 }
 
 @media (max-width: 1200px) {
