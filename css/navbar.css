@@ -146,6 +146,10 @@ footer {
     border-bottom: 0.063rem solid #eee;
 }
 
+.dropdown-menu a {
+    font-size: 1.7rem;
+}
+
 .dropdown-menu li:last-child {
     border-bottom: none;
 }
