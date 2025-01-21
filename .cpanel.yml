@@ -1,12 +1,52 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home1/nndscomy/repositories/jsitherapy/public_html/
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R docs $DEPLOYPATH
-    - /bin/cp -R scripts $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp services.html $DEPLOYPATH
-    - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp contact.html $DEPLOYPATH
+    - mkdir -p $DEPLOYPATH  # Ensure the target directory exists
+    - |
+      if [ -d "images" ]; then
+        /bin/cp -R images $DEPLOYPATH
+      else
+        echo "images directory does not exist!"
+      fi
+    - |
+      if [ -d "docs" ]; then
+        /bin/cp -R docs $DEPLOYPATH
+      else
+        echo "docs directory does not exist!"
+      fi
+    - |
+      if [ -d "scripts" ]; then
+        /bin/cp -R scripts $DEPLOYPATH
+      else
+        echo "scripts directory does not exist!"
+      fi
+    - |
+      if [ -d "css" ]; then
+        /bin/cp -R css $DEPLOYPATH
+      else
+        echo "css directory does not exist!"
+      fi
+    - |
+      if [ -f "index.html" ]; then
+        /bin/cp index.html $DEPLOYPATH
+      else
+        echo "index.html file does not exist!"
+      fi
+    - |
+      if [ -f "services.html" ]; then
+        /bin/cp services.html $DEPLOYPATH
+      else
+        echo "services.html file does not exist!"
+      fi
+    - |
+      if [ -f "about.html" ]; then
+        /bin/cp about.html $DEPLOYPATH
+      else
+        echo "about.html file does not exist!"
+      fi
+    - |
+      if [ -f "contact.html" ]; then
+        /bin/cp contact.html $DEPLOYPATH
+      else
+        echo "contact.html file does not exist!"
+      fi
