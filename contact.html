@@ -35,32 +35,57 @@ Contact Us
 
   <body>
     <div class="box">
-        <form id="form">
-            <div class="label-container">
-                <label for="name">Name</label>
-                <span class="required-label">(required)</span>
-            </div>
-          <input type="text" name="name" id="name" placeholder="eg. John Doe" required>
-          
-          <div class="label-container">
-          <label for="email">Email</label>
-          <span class="required-label">(required)</span>
+      <form id="form">
+        <div class="label-container">
+            <label for="name">Name</label>
+            <span class="required-label">(required)</span>
         </div>
-          <input type="email" name="email" id="email" placeholder="eg. john@example.com" required>
-          <div class="label-container">
-          <label for="phone">Phone</label>
-          <span class="required-label">(required)</span>
+        <input type="text" name="name" id="name" placeholder="eg. John Doe" required>
+    
+        <div class="label-container">
+            <label for="email">Email</label>
+            <span class="required-label">(required)</span>
+        </div>
+        <input type="email" name="email" id="email" placeholder="eg. john@example.com" required>
+    
+        <div class="label-container">
+            <label for="phone">Phone</label>
+            <span class="required-label">(required)</span>
+        </div>
+        <input type="text" name="phone" id="phone" placeholder="eg. (123) 456 - 7890" required>
+    
+        <div class="label-container">
+            <label for="message">Message</label>
+            <span class="required-label">(required)</span>
+        </div>
+        <textarea name="message" id="message" placeholder="eg. I would like to find out more about your services." rows="4" required></textarea>
+
+        <div class="checkbox-group">
+          <p>Do you agree to receive text messages from us?*</p>
+          <div>
+              <label>
+                  <input type="checkbox" name="agree_texts" id="agree_texts">
+                  Yes, I agree to receive text messages from (Business Name) sent from (512-851-8549).
+              </label>
           </div>
-          <input type="text" name="phone" id="phone" placeholder="eg. (123) 456 - 7890" required>
-          <div class="label-container">
-          <label for="message">Message</label>
-          <span class="required-label">(required)</span>
+          <div>
+              <label>
+                  <input type="checkbox" name="decline_texts" id="decline_texts">
+                  No, I do not want to receive text messages from (Business Name).
+              </label>
           </div>
-          <textarea name="message" id="message" placeholder="eg. I would like to find out more about your services." rows="4" required></textarea>
-          <button type="submit" id="button">SUBMIT</button>
-        </form>
-        
       </div>
+      <p>
+        See our <a href="docs/privacy_policy.pdf" target="_blank">Privacy Policy</a> for details on how we handle your information.
+    </p>
+
+      
+    
+        <button type="submit" id="button">SUBMIT</button>
+    </form>
+    
+        
+    </div>
       
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -72,32 +97,54 @@ Contact Us
     <script>
     const btn = document.getElementById('button');
 
-    document.getElementById('form')
-    .addEventListener('submit', function (event) {
-        event.preventDefault();
+    document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        btn.textContent = 'Sending...';
+    const btn = document.getElementById('button');
+    btn.textContent = 'Sending...';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_odi0g7e';
+    const serviceID = 'default_service';
+    const templateID = 'template_odi0g7e';
 
-        emailjs.sendForm(serviceID, templateID, this)
+    let checkboxValue = '';
+    if (document.getElementById('agree_texts').checked) {
+        checkboxValue = 'Yes';
+    } else if (document.getElementById('decline_texts').checked) {
+        checkboxValue = 'No';
+    } else {
+        alert('Please select an option for opt-in of text messages.');
+        btn.textContent = 'Send Email';
+        return;
+    }
+
+    // Add a hidden input to the form to include the checkbox value
+    const hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 'texts';
+    hiddenInput.value = checkboxValue;
+    this.appendChild(hiddenInput);
+
+    emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
-            btn.textContent = 'Send Email';
+            btn.textContent = 'Send';
             alert('Sent!');
+            hiddenInput.remove();
             resetForm(); // Call the resetForm function after successful sending
         }, (err) => {
-            btn.textContent = 'Send Email';
+            btn.textContent = 'Send';
             alert(JSON.stringify(err));
         });
-    });
+});
 
-    function resetForm() {
+function resetForm() {
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('phone').value = '';
     document.getElementById('message').value = '';
-    }
+    document.getElementById('agree_texts').checked = false;
+    document.getElementById('decline_texts').checked = false;
+}
+
 
     </script>
 </section>
@@ -147,28 +194,32 @@ Suite 1105
 </section>
 
 
-  <footer>
-      <div class="contact">
-        <img src="images/jsi_logo.png" width="160" height="160" alt="Logo">
-        <div class="container">
+<footer>
+  <div class="contact">
+      <img src="images/jsi_logo.png" width="160" height="160" alt="Logo">
+      <div class="container">
           <h3>Opening Hours</h3>
           <p>Monday - Friday: 9:00am - 4:00pm</p>
           <p>Saturday & Sunday: By Appointment</p>
-        </div>
-        <div class="container">
+      </div>
+      <div class="container">
           <h3>Office</h3>
           <p>129 Alondra Way</p>
           <p>Round Rock, TX. 78681</p>
-        </div>
-        <div class="container">
+      </div>
+      <div class="container">
           <h3>Outpatient Clinic</h3>
           <p>4818 Berkman Drive</p>
           <p>Austin, TX. 78723</p>
           <p>Suite 1105</p>
-        </div>
       </div>
-      <p class="copyright">&copy Jumpstart Services Inc. 2023</p>
-  </footer>
+  </div>
+  <p class="copyright">
+      &copy Jumpstart Services Inc. 2023
+      |    <a href="docs/terms_and_conditions.pdf" target="_blank"> Terms and Conditions</a>
+  </p>
+</footer>
+
 </body>
  <!-- Js Scripts -->
  <script src="scripts/transitions.js"></script>
