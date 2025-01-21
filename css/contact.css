@@ -81,6 +81,11 @@ section {
     padding: 5rem;
 }
 
+.submission {
+    padding: 5rem;
+    padding-bottom: 12rem;
+}
+
 .maps {
     display: flex;
     justify-content: space-between;
