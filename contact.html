@@ -1,245 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=NTR:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/fadeup.css">
-  <title>Contact Us</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=NTR:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/fadeup.css" />
+    <title>Contact Us</title>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="images/jsi_big.png"alt="Logo">
-    </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Our Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-</body>
-
-<section class="submission">
-
-  <div class="head animate">
-Contact Us
-  </div>
+    <!-- Box-sizing fix for consistent padding/margins -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
 
   <body>
-    <div class="box">
-      <form id="form">
-        <div class="label-container">
+    <!-- HEADER & NAVBAR -->
+    <header>
+      <div class="logo">
+        <img src="images/jsi_big.png" alt="Logo" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="submission">
+      <div class="head animate">Contact Us</div>
+
+      <div class="box">
+        <form id="form">
+          <div class="label-container">
             <label for="name">Name</label>
             <span class="required-label">(required)</span>
-        </div>
-        <input type="text" name="name" id="name" placeholder="eg. John Doe" required>
-    
-        <div class="label-container">
+          </div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="eg. John Doe"
+            required
+          />
+
+          <div class="label-container">
             <label for="email">Email</label>
             <span class="required-label">(required)</span>
-        </div>
-        <input type="email" name="email" id="email" placeholder="eg. john@example.com" required>
-    
-        <div class="label-container">
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="eg. john@example.com"
+            required
+          />
+
+          <div class="label-container">
             <label for="phone">Phone</label>
             <span class="required-label">(required)</span>
-        </div>
-        <input type="text" name="phone" id="phone" placeholder="eg. (123) 456 - 7890" required>
-    
-        <div class="label-container">
+          </div>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="eg. (123) 456 - 7890"
+            required
+          />
+
+          <div class="label-container">
             <label for="message">Message</label>
             <span class="required-label">(required)</span>
-        </div>
-        <textarea name="message" id="message" placeholder="eg. I would like to find out more about your services." rows="4" required></textarea>
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="eg. I would like to find out more about your services."
+            rows="4"
+            required
+          ></textarea>
 
-        <div class="checkbox-group">
-          <p>Do you agree to receive text messages from us?*</p>
-          <div>
+          <div class="checkbox-group">
+            <p>Do you agree to receive text messages from us?*</p>
+            <div>
               <label>
-                  <input type="checkbox" name="agree_texts" id="agree_texts">
-                  Yes, I agree to receive text messages from Jumpstart Therapy Services sent from (512-851-8549).
+                <input type="checkbox" name="agree_texts" id="agree_texts" />
+                Yes, I agree to receive text messages from Jumpstart Therapy
+                Services sent from (512-851-8549).
               </label>
-          </div>
-          <div>
+            </div>
+            <div>
               <label>
-                  <input type="checkbox" name="decline_texts" id="decline_texts">
-                  No, I do not want to receive text messages from Jumpstart Therapy Services.
+                <input
+                  type="checkbox"
+                  name="decline_texts"
+                  id="decline_texts"
+                />
+                No, I do not want to receive text messages from Jumpstart
+                Therapy Services.
               </label>
+            </div>
           </div>
+
+          <p>
+            See our
+            <a href="docs/privacy_policy.pdf" target="_blank">Privacy Policy</a>
+            for details on how we handle your information.
+          </p>
+
+          <button type="submit" id="button">SUBMIT</button>
+        </form>
       </div>
-      <p>
-        See our <a href="docs/privacy_policy.pdf" target="_blank">Privacy Policy</a> for details on how we handle your information.
-    </p>
+    </section>
 
-      
-    
-        <button type="submit" id="button">SUBMIT</button>
-    </form>
-    
-        
-    </div>
-      
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-    emailjs.init('f2WkdkbRITzQPUIc1')
-    </script>
-
-    <script>
-    const btn = document.getElementById('button');
-
-    document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const btn = document.getElementById('button');
-    btn.textContent = 'Sending...';
-
-    const serviceID = 'default_service';
-    const templateID = 'template_odi0g7e';
-
-    let checkboxValue = '';
-    if (document.getElementById('agree_texts').checked) {
-        checkboxValue = 'Yes';
-    } else if (document.getElementById('decline_texts').checked) {
-        checkboxValue = 'No';
-    } else {
-        alert('Please select an option for opt-in of text messages.');
-        btn.textContent = 'Send Email';
-        return;
-    }
-
-    // Add a hidden input to the form to include the checkbox value
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.name = 'texts';
-    hiddenInput.value = checkboxValue;
-    this.appendChild(hiddenInput);
-
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-            btn.textContent = 'Send';
-            alert('Sent!');
-            hiddenInput.remove();
-            resetForm(); // Call the resetForm function after successful sending
-        }, (err) => {
-            btn.textContent = 'Send';
-            alert(JSON.stringify(err));
-        });
-});
-
-function resetForm() {
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('phone').value = '';
-    document.getElementById('message').value = '';
-    document.getElementById('agree_texts').checked = false;
-    document.getElementById('decline_texts').checked = false;
-}
-
-
-    </script>
-</section>
-
-<section class="maps animate-on-scroll">
-    <div class="map">
-        <p class="title">
-            Office
-        </p>
+    <!-- MAPS SECTION -->
+    <section class="maps animate-on-scroll">
+      <div class="map">
+        <p class="title">Office</p>
         <p class="details">
-            129 Alondra Way
-Round Rock, TX. 78681
+          129 Alondra Way <br />
+          Round Rock, TX. 78681
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.266335851372!2d-97.73020392504829!3d30.54177839483732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d3ba5dafffe7%3A0xa11b2d9d4cbf473a!2s129%20Alondra%20Way%2C%20Round%20Rock%2C%20TX%2078681%2C%20USA!5e0!3m2!1sen!2stt!4v1693328773285!5m2!1sen!2stt" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.266335851372!2d-97.73020392504829!3d30.54177839483732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d3ba5dafffe7%3A0xa11b2d9d4cbf473a!2s129%20Alondra%20Way%2C%20Round%20Rock%2C%20TX%2078681%2C%20USA!5e0!3m2!1sen!2stt!4v1693328773285!5m2!1sen!2stt"
+          width="320"
+          height="320"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
 
-    <div class="map">
-        <p class="title">
-            Outpatient Clinic
-        </p>
+      <div class="map">
+        <p class="title">Outpatient Clinic</p>
         <p class="details">
-            11819 Pavilion Blvd, 
-            Austin, TX. 78759 |
-            Suite 269
+          11819 Pavilion Blvd, <br />
+          Austin, TX. 78759 <br />
+          Suite 269
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.4071373806164!2d-97.75814842443162!3d30.42455837473442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ccef800e947b%3A0x3c53d79c05699ac!2s11819%20Pavilion%20Blvd%2C%20Austin%2C%20TX%2078759%2C%20USA!5e0!3m2!1sen!2stt!4v1737479731369!5m2!1sen!2stt" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.4071373806164!2d-97.75814842443162!3d30.42455837473442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ccef800e947b%3A0x3c53d79c05699ac!2s11819%20Pavilion%20Blvd%2C%20Austin%2C%20TX%2078759%2C%20USA!5e0!3m2!1sen!2stt!4v1737479731369!5m2!1sen!2stt"
+          width="320"
+          height="320"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
 
-   
-
-    <div class="map">
-        <p class="title">
-            Outpatient Clinic
-        </p>
+      <div class="map">
+        <p class="title">Outpatient Clinic</p>
         <p class="details">
-        4818 Berkman Drive, Austin, TX. 78723 |
-Suite 1105
+          4818 Berkman Drive, Austin, TX. 78723 <br />
+          Suite 1105
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.7220658078663!2d-97.70333012505793!3d30.30197300632427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca007cd7416d%3A0xa3d3446d462a1684!2s4818%20Berkman%20Dr%20%231105%2C%20Austin%2C%20TX%2078723%2C%20USA!5e0!3m2!1sen!2stt!4v1693330701864!5m2!1sen!2stt" width="320" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
-</section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.7220658078663!2d-97.70333012505793!3d30.30197300632427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca007cd7416d%3A0xa3d3446d462a1684!2s4818%20Berkman%20Dr%20%231105%2C%20Austin%2C%20TX%2078723%2C%20USA!5e0!3m2!1sen!2stt!4v1693330701864!5m2!1sen!2stt"
+          width="320"
+          height="320"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
 
-<div class="number">
+    <!-- CONTACT INFO SECTION -->
     <div class="number">
-        <p class="title">
-            Phone
-        </p>
-        <p class="details">
-            (917) 364-6235 |
-(917) 838-2098 |
-(512) 276 2810 
-        </p>
+      <div class="number">
+        <p class="title">Phone</p>
+        <p class="details">(917) 364-6235 | (917) 838-2098 | (512) 276 2810</p>
+      </div>
+
+      <div class="number">
+        <p class="title">Fax</p>
+        <p class="details">(512) 727-6570</p>
+      </div>
     </div>
 
-    <div class="number">
-        <p class="title">
-            Fax
-        </p>
-        <p class="details">
-            (512) 727-6570
-        </p>
-    </div>
-</div>
-
-<footer>
-  <div class="contact">
-      <img src="images/jsi_logo.png" width="160" height="160" alt="Logo">
-      <div class="container">
+    <!-- FOOTER -->
+    <footer>
+      <div class="contact">
+        <img src="images/jsi_logo.png" width="160" height="160" alt="Logo" />
+        <div class="container">
           <h3>Opening Hours</h3>
           <p>Monday - Friday: 9:00am - 4:00pm</p>
           <p>Saturday & Sunday: By Appointment</p>
-      </div>
-      <div class="container">
+        </div>
+        <div class="container">
           <h3>Office</h3>
           <p>129 Alondra Way</p>
           <p>Round Rock, TX. 78681</p>
-      </div>
-      <div class="container">
+        </div>
+        <div class="container">
           <h3>Outpatient Clinics</h3>
           <p>4818 Berkman Drive</p>
           <p>Austin, TX. 78723</p>
-    
           <p>Suite 1105</p>
-          <p>&nbsp</p>
+          <p>&nbsp;</p>
           <p class="secondaddress">11819 Pavilion Blvd</p>
           <p>Austin, TX. 78759</p>
           <p>Suite 269</p>
+        </div>
       </div>
-  </div>
-  <p class="copyright">
-      &copy Jumpstart Services Inc. 2025
-      |&nbsp    <a href="docs/terms_and_conditions.pdf" target="_blank">Terms and Conditions</a>
-  </p>
-</footer>
+      <p class="copyright">
+        &copy; Jumpstart Services Inc. 2025 |
+        <a href="docs/terms_and_conditions.pdf" target="_blank"
+          >Terms and Conditions</a
+        >
+      </p>
+    </footer>
 
-</body>
- <!-- Js Scripts -->
- <script src="scripts/transitions.js"></script>
+    <!-- JS SCRIPTS AT THE END (BEST PRACTICE) -->
+    <!-- Your transitions, animations, etc. -->
+    <script src="scripts/transitions.js"></script>
+
+    <!-- EmailJS Script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("f2WkdkbRITzQPUIc1");
+
+      const btn = document.getElementById("button");
+      const form = document.getElementById("form");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        btn.textContent = "Sending...";
+
+        const serviceID = "default_service";
+        const templateID = "template_odi0g7e";
+
+        // Determine checkbox value
+        let checkboxValue = "";
+        if (document.getElementById("agree_texts").checked) {
+          checkboxValue = "Yes";
+        } else if (document.getElementById("decline_texts").checked) {
+          checkboxValue = "No";
+        } else {
+          alert("Please select an option for opt-in of text messages.");
+          btn.textContent = "SUBMIT";
+          return;
+        }
+
+        // Hidden input to pass checkbox value
+        const hiddenInput = document.createElement("input");
+        hiddenInput.type = "hidden";
+        hiddenInput.name = "texts";
+        hiddenInput.value = checkboxValue;
+        form.appendChild(hiddenInput);
+
+        emailjs.sendForm(serviceID, templateID, this).then(
+          () => {
+            btn.textContent = "SEND";
+            alert("Sent!");
+            hiddenInput.remove();
+            resetForm();
+          },
+          (err) => {
+            btn.textContent = "SEND";
+            alert(JSON.stringify(err));
+          }
+        );
+      });
+
+      function resetForm() {
+        form.reset();
+      }
+    </script>
+  </body>
 </html>
