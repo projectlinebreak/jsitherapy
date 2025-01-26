@@ -10,7 +10,7 @@
 
 .box {
     width: 100%;
-    height: 75vh;
+    min-height: 75vh; /* Changed from height to min-height */
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -46,7 +46,6 @@ button {
     background-color: transparent;
     border: solid 0.15rem #7DBA39;
     color: #7DBA39;
-    /* Change the initial text color */
     font-size: 1.5rem;
     font-family: NTR;
     outline: none;
@@ -57,14 +56,12 @@ button {
 button:hover {
     background-color: #7DBA39;
     color: white;
-    /* Text color on hover */
 }
 
 .title {
     font-family: Gloock;
     font-size: 3.1rem;
     color: #B32E2A;
-    color: rgb(179, 46, 42);
     justify-content: center;
     font-weight: 600;
 }
@@ -73,7 +70,6 @@ button:hover {
     font-family: NTR;
     font-size: 1.5rem;
     color: #3D3D3D;
-    color: rgb(61, 61, 61);
     justify-content: center;
 }
 
@@ -83,27 +79,29 @@ section {
 
 .submission {
     padding: 5rem;
-    padding-bottom: 12rem;
+    padding-bottom: 5rem; /* Reduced from 12rem */
+    margin-bottom: 3rem; /* Added margin-bottom */
 }
 
 .maps {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Added flex-wrap */
+    gap: 2rem; /* Added gap for spacing */
 }
 
 .map {
     text-align: center;
-    flex: 1;
+    flex: 1 1 300px; /* Flexible sizing */
     padding: 0.075rem;
-
+    max-width: 100%; /* Prevent overflow */
 }
 
 .number {
     text-align: center;
-    flex: 1;
-    padding: 0.075rem;
-
+    padding: 2rem 0; /* Adjusted padding */
+    margin: 2rem 0; /* Added margin for spacing */
 }
 
 .required-label {
@@ -111,16 +109,13 @@ section {
     margin-left: 0.3rem;
 }
 
-
 .label-container {
     display: inline-block;
-    /* Display label and "(required)" text inline */
 }
 
 .label-container label {
     font-size: 1.5rem;
 }
-
 
 img {
     max-width: 100%;
@@ -137,6 +132,11 @@ img {
         padding: 1rem;
     }
 
+    .map {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 2rem; /* Added margin for spacing */
+    }
+
     .number {
         flex-direction: column;
         padding: 1rem;
@@ -144,7 +144,6 @@ img {
 
     .title {
         font-size: 2.5rem;
-        /* Smaller font size */
     }
 
     button {
@@ -162,30 +161,29 @@ img {
         border-radius: 5px;
         background-color: #f9f9f9;
     }
-    
+
     .checkbox-group p {
         font-weight: bold;
         margin-bottom: 10px;
     }
-    
+
     .checkbox-group label {
         display: block;
         margin-bottom: 5px;
         font-size: 14px;
         cursor: pointer;
     }
-    
+
     .checkbox-group input[type="checkbox"] {
         margin-right: 10px;
     }
-    
+
     a {
         color: #0066cc;
         text-decoration: none;
     }
-    
+
     a:hover {
         text-decoration: underline;
     }
-    
 }
