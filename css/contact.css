@@ -121,6 +121,93 @@ img {
     max-width: 100%;
 }
 
+.submission .checkbox-group {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #d0d0d0; /* Softer border color */
+    border-radius: 5px; /* Reduced border radius */
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.submission .checkbox-group:hover {
+    border-color: #7DBA39; /* Highlight border on hover */
+}
+
+.submission .checkbox-group p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.submission .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.submission .checkbox-group label:hover {
+    color: #7DBA39; /* Highlight label text on hover */
+}
+
+.submission .checkbox-group input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    appearance: none;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.submission .checkbox-group input[type="radio"]:focus {
+    outline: 2px solid #7DBA39;
+    outline-offset: 2px;
+}
+
+.submission .checkbox-group input[type="radio"]:checked {
+    border-color: #7DBA39;
+}
+
+.submission .checkbox-group input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #7DBA39;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submission .checkbox-group strong {
+    font-weight: bold;
+    opacity: 0.9; /* Slightly reduce opacity for a softer look */
+    color: #b32e2a
+  }
+
+.submission .checkbox-group a {
+    color: #7DBA39;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.submission .checkbox-group a:hover {
+    color: #5a8f2d; /* Darker green for hover */
+    text-decoration: underline;
+}
+
 @media (max-width: 1200px) {
     .head {
         font-size: 3rem;
@@ -157,16 +244,14 @@ img {
     .submission .checkbox-group {
         margin: 20px 0;
         padding: 20px;
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
+        border: 1px solid #d0d0d0; /* Softer border color */
+        border-radius: 5px; /* Reduced border radius */
         background-color: #ffffff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        transition: border-color 0.3s ease;
     }
     
     .submission .checkbox-group:hover {
-        border-color: #7DBA39;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        border-color: #7DBA39; /* Highlight border on hover */
     }
     
     .submission .checkbox-group p {
@@ -176,6 +261,12 @@ img {
         color: #333333;
         line-height: 1.5;
     }
+
+    .submission .checkbox-group strong {
+        font-weight: bold;
+        color: #333333;
+        opacity: 0.9; /* Slightly reduce opacity for a softer look */
+      }
     
     .submission .checkbox-group label {
         display: flex;
@@ -188,7 +279,7 @@ img {
     }
     
     .submission .checkbox-group label:hover {
-        color: #7DBA39;
+        color: #7DBA39; /* Highlight label text on hover */
     }
     
     .submission .checkbox-group input[type="radio"] {
@@ -233,7 +324,7 @@ img {
     }
     
     .submission .checkbox-group a:hover {
-        color: #5a8f2d;
+        color: #5a8f2d; /* Darker green for hover */
         text-decoration: underline;
     }
 
