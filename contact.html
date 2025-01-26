@@ -94,10 +94,21 @@
           ></textarea>
 
           <div class="checkbox-group">
-            <p>Do you agree to receive text messages from us?*</p>
+            <p>
+              Do you agree to receive text messages from Jumpstart Therapy
+              Services sent from (512-851-8549)? Message frequency varies and
+              may include Appointment reminders, service or order information.
+              Message and data rates may apply. Reply "STOP" at any time to end
+              or "HELP" for assistance or contact support at (512-851-8549).
+            </p>
             <div>
               <label>
-                <input type="checkbox" name="agree_texts" id="agree_texts" />
+                <input
+                  type="radio"
+                  name="text_messages"
+                  id="agree_texts"
+                  value="Yes"
+                />
                 Yes, I agree to receive text messages from Jumpstart Therapy
                 Services sent from (512-851-8549).
               </label>
@@ -105,9 +116,10 @@
             <div>
               <label>
                 <input
-                  type="checkbox"
-                  name="decline_texts"
+                  type="radio"
+                  name="text_messages"
                   id="decline_texts"
+                  value="No"
                 />
                 No, I do not want to receive text messages from Jumpstart
                 Therapy Services.
@@ -253,11 +265,14 @@
         const serviceID = "default_service";
         const templateID = "template_odi0g7e";
 
-        // Determine checkbox value
+        // Determine radio button value
+        const agreeTexts = document.getElementById("agree_texts");
+        const declineTexts = document.getElementById("decline_texts");
+
         let checkboxValue = "";
-        if (document.getElementById("agree_texts").checked) {
+        if (agreeTexts.checked) {
           checkboxValue = "Yes";
-        } else if (document.getElementById("decline_texts").checked) {
+        } else if (declineTexts.checked) {
           checkboxValue = "No";
         } else {
           alert("Please select an option for opt-in of text messages.");
@@ -265,7 +280,7 @@
           return;
         }
 
-        // Hidden input to pass checkbox value
+        // Hidden input to pass radio button value
         const hiddenInput = document.createElement("input");
         hiddenInput.type = "hidden";
         hiddenInput.name = "texts";
