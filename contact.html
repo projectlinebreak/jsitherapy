@@ -93,41 +93,35 @@
             required
           ></textarea>
 
-          <div class="checkbox-group">
-            <p>
-              Do you agree to receive text messages from
-              <strong>Jumpstart Therapy Services</strong> sent from
-              <strong>(512-851-8549)</strong>? Message frequency varies and may
-              include <strong>Appointment reminders</strong>,
-              <strong>service</strong> or <strong>order information</strong>.
-              Message and data rates may apply. Reply <strong>"STOP"</strong> at
-              any time to end or <strong>"HELP"</strong> for assistance or
-              contact support at <strong>(512-851-8549)</strong>.
-            </p>
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="text_messages"
-                  id="agree_texts"
-                  value="Yes"
-                />
-                Yes, I agree to receive text messages from Jumpstart Therapy
-                Services sent from (512-851-8549).
-              </label>
-            </div>
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="text_messages"
-                  id="decline_texts"
-                  value="No"
-                />
-                No, I do not want to receive text messages from Jumpstart
-                Therapy Services.
-              </label>
-            </div>
+          <div class="label-container">
+            <label for="text_messages">Text Message Consent</label>
+            <span class="required-label">(optional)</span>
+          </div>
+          <div class="consent-text">
+            Do you agree to receive text messages from Jumpstart Therapy
+            Services (512-851-8549)? Message frequency varies and may include
+            appointment reminders and service information. Message and data
+            rates may apply. Reply "STOP" to end or "HELP" for assistance.
+          </div>
+          <div class="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="text_messages"
+                id="agree_texts"
+                value="Yes"
+              />
+              Yes, I agree to receive text messages
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="text_messages"
+                id="decline_texts"
+                value="No"
+              />
+              No, I do not want to receive text messages
+            </label>
           </div>
 
           <p>
@@ -272,15 +266,12 @@
         const agreeTexts = document.getElementById("agree_texts");
         const declineTexts = document.getElementById("decline_texts");
 
-        let checkboxValue = "";
+        // Set default value if none selected (since it's optional)
+        let checkboxValue = "No response";
         if (agreeTexts.checked) {
           checkboxValue = "Yes";
         } else if (declineTexts.checked) {
           checkboxValue = "No";
-        } else {
-          alert("Please select an option for opt-in of text messages.");
-          btn.textContent = "SUBMIT";
-          return;
         }
 
         // Hidden input to pass radio button value
@@ -292,13 +283,13 @@
 
         emailjs.sendForm(serviceID, templateID, this).then(
           () => {
-            btn.textContent = "SEND";
+            btn.textContent = "SUBMIT";
             alert("Sent!");
             hiddenInput.remove();
             resetForm();
           },
           (err) => {
-            btn.textContent = "SEND";
+            btn.textContent = "SUBMIT";
             alert(JSON.stringify(err));
           }
         );
