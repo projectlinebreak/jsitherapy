@@ -10,7 +10,7 @@
 
 .box {
     width: 100%;
-    min-height: 75vh; /* Changed from height to min-height */
+    min-height: 75vh;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -28,7 +28,9 @@ form {
 }
 
 form input,
-form textarea {
+form textarea,
+.consent-text,
+.radio-group {
     border: solid 0.1rem;
     border-color: #666666;
     margin: 0.6rem 0;
@@ -37,6 +39,20 @@ form textarea {
     background-color: #f5f5f5;
     font-size: 1.2rem;
     font-family: NTR;
+}
+
+.consent-text {
+    line-height: 1.4;
+}
+
+.radio-group label {
+    display: block;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
 }
 
 button {
@@ -79,29 +95,29 @@ section {
 
 .submission {
     padding: 5rem;
-    padding-bottom: 5rem; /* Reduced from 12rem */
-    margin-bottom: 3rem; /* Added margin-bottom */
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .maps {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Added flex-wrap */
-    gap: 2rem; /* Added gap for spacing */
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .map {
     text-align: center;
-    flex: 1 1 300px; /* Flexible sizing */
+    flex: 1 1 300px;
     padding: 0.075rem;
-    max-width: 100%; /* Prevent overflow */
+    max-width: 100%;
 }
 
 .number {
     text-align: center;
-    padding: 2rem 0; /* Adjusted padding */
-    margin: 2rem 0; /* Added margin for spacing */
+    padding: 2rem 0;
+    margin: 2rem 0;
 }
 
 .required-label {
@@ -121,93 +137,6 @@ img {
     max-width: 100%;
 }
 
-.submission .checkbox-group {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #d0d0d0; /* Softer border color */
-    border-radius: 5px; /* Reduced border radius */
-    background-color: #ffffff;
-    transition: border-color 0.3s ease;
-}
-
-.submission .checkbox-group:hover {
-    border-color: #7DBA39; /* Highlight border on hover */
-}
-
-.submission .checkbox-group p {
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #333333;
-    line-height: 1.5;
-}
-
-.submission .checkbox-group label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #555555;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.submission .checkbox-group label:hover {
-    color: #7DBA39; /* Highlight label text on hover */
-}
-
-.submission .checkbox-group input[type="radio"] {
-    margin-right: 10px;
-    cursor: pointer;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #666666;
-    border-radius: 50%;
-    appearance: none;
-    position: relative;
-    transition: border-color 0.3s ease;
-}
-
-.submission .checkbox-group input[type="radio"]:focus {
-    outline: 2px solid #7DBA39;
-    outline-offset: 2px;
-}
-
-.submission .checkbox-group input[type="radio"]:checked {
-    border-color: #7DBA39;
-}
-
-.submission .checkbox-group input[type="radio"]:checked::before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: #7DBA39;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.submission .checkbox-group strong {
-    font-weight: bold;
-    opacity: 0.9; /* Slightly reduce opacity for a softer look */
-    color: #b32e2a
-  }
-
-.submission .checkbox-group a {
-    color: #7DBA39;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.submission .checkbox-group a:hover {
-    color: #5a8f2d; /* Darker green for hover */
-    text-decoration: underline;
-}
-
 @media (max-width: 1200px) {
     .head {
         font-size: 3rem;
@@ -220,8 +149,8 @@ img {
     }
 
     .map {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        margin-bottom: 2rem; /* Added margin for spacing */
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
     }
 
     .number {
@@ -237,95 +166,10 @@ img {
         margin-bottom: 10rem;
     }
 
-    form textarea {
+    form textarea,
+    .consent-text,
+    .radio-group {
         font-size: 0.8rem;
-    }
-
-    .submission .checkbox-group {
-        margin: 20px 0;
-        padding: 20px;
-        border: 1px solid #d0d0d0; /* Softer border color */
-        border-radius: 5px; /* Reduced border radius */
-        background-color: #ffffff;
-        transition: border-color 0.3s ease;
-    }
-    
-    .submission .checkbox-group:hover {
-        border-color: #7DBA39; /* Highlight border on hover */
-    }
-    
-    .submission .checkbox-group p {
-        font-weight: bold;
-        margin-bottom: 15px;
-        font-size: 1.1rem;
-        color: #333333;
-        line-height: 1.5;
-    }
-
-    .submission .checkbox-group strong {
-        font-weight: bold;
-        color: #333333;
-        opacity: 0.9; /* Slightly reduce opacity for a softer look */
-      }
-    
-    .submission .checkbox-group label {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        font-size: 1rem;
-        color: #555555;
-        cursor: pointer;
-        transition: color 0.3s ease;
-    }
-    
-    .submission .checkbox-group label:hover {
-        color: #7DBA39; /* Highlight label text on hover */
-    }
-    
-    .submission .checkbox-group input[type="radio"] {
-        margin-right: 10px;
-        cursor: pointer;
-        width: 18px;
-        height: 18px;
-        border: 2px solid #666666;
-        border-radius: 50%;
-        appearance: none;
-        position: relative;
-        transition: border-color 0.3s ease;
-    }
-    
-    .submission .checkbox-group input[type="radio"]:focus {
-        outline: 2px solid #7DBA39;
-        outline-offset: 2px;
-    }
-    
-    .submission .checkbox-group input[type="radio"]:checked {
-        border-color: #7DBA39;
-    }
-    
-    .submission .checkbox-group input[type="radio"]:checked::before {
-        content: "";
-        display: block;
-        width: 10px;
-        height: 10px;
-        background-color: #7DBA39;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .submission .checkbox-group a {
-        color: #7DBA39;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
-    
-    .submission .checkbox-group a:hover {
-        color: #5a8f2d; /* Darker green for hover */
-        text-decoration: underline;
     }
 
     a {
