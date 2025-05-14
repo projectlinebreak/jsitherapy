@@ -120,6 +120,26 @@ section {
     margin: 2rem 0;
 }
 
+.phone-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.phone-item {
+    font-family: NTR;
+    font-size: 1.5rem;
+    color: #3D3D3D;
+}
+
+.location {
+    font-weight: bold;
+    color: #7DBA39;
+    margin-right: 0.5rem;
+}
+
 .required-label {
     color: rgb(88, 88, 88);
     margin-left: 0.3rem;
@@ -170,6 +190,10 @@ img {
     .consent-text,
     .radio-group {
         font-size: 0.8rem;
+    }
+
+    .phone-item {
+        font-size: 1.2rem;
     }
 
     a {
